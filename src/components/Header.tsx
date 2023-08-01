@@ -14,17 +14,20 @@ const Header = () => {
   }, [theme])
   
   return (
-    <header className='flex justify-evenly w-full p-3 h-full
-      border-solid border-2 border-sky-500 '>
+    <header className='flex justify-evenly w-full h-4/5 p-3 items-center'>
       <Link to={'/'}>
-        <img src={logo} alt='Logo'/>
+        <img src={logo} alt='Logo' width={'50px'}/>
       </Link>
-      <div className='flex justify-end w-2/3 gap-10 '>
-        <div className='flex gap-2'>
-          <Link to={'/signin'}> <h2 className='text-[22px] font-bold 
-            text-slate-900 dark:text-slate-300'>Iniciar sesión</h2> </Link>
-          <Link to={'/signup'}> <h2 className='text-[22px] font-bold 
-            text-slate-900 dark:text-slate-300'>Registro</h2> </Link>
+      <div className='flex justify-end w-2/3 gap-10 h-4/5 items-center '>
+        <div className='flex h-full gap-14 items-center'>
+          <Link to={'/signin'}> <h2 className='text-[26px] 
+            text-slate-900 dark:text-slate-300 hover:font-semibold 
+            transition-all ease-out duration-300'>Iniciar sesión</h2> </Link>
+          <div>
+            <Link to={'/signup'}> <h2 className='text-[26px] 
+              text-slate-100 hover:font-semibold bg-[#4688FA] rounded-md py-1 px-2
+              transition-all ease-out duration-300'>Registro</h2> </Link>
+          </div>
         </div>
         <div>
           {

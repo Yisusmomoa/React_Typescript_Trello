@@ -8,3 +8,9 @@
     border:0;
     box-sizing: border-box;
 }
+
+.colors{
+    background: #F1F5F9; /*60*/
+    background: #0F172A; /*30*/
+    background: #4688FA; /*10*/
+}
